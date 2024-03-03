@@ -17,13 +17,13 @@ func TestEntityAsIndex(t *testing.T) {
 }
 
 func TestEntityID(t *testing.T) {
-	e := newEntityGen(1, 2)
+	e := NewEntityGen(1, 2)
 
 	assert.Equal(t, e.ID(), uint32(1))
 }
 
 func TestEntityGeneration(t *testing.T) {
-	e := newEntityGen(1, 2)
+	e := NewEntityGen(1, 2)
 
 	assert.Equal(t, e.Generation(), uint32(2))
 }
@@ -34,7 +34,7 @@ func TestZeroEntity(t *testing.T) {
 }
 
 func TestEntityMarshal(t *testing.T) {
-	e := newEntityGen(2, 3)
+	e := NewEntityGen(2, 3)
 
 	jsonData, err := json.Marshal(&e)
 	if err != nil {

@@ -33,8 +33,8 @@ func newEntity(id eid) Entity {
 	return Entity{id, 0}
 }
 
-// newEntityGen creates a new Entity with a given generation.
-func newEntityGen(id eid, gen uint32) Entity {
+// NewEntityGen creates a new Entity with a given generation.
+func NewEntityGen(id eid, gen uint32) Entity {
 	return Entity{id, gen}
 }
 
