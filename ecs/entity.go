@@ -34,8 +34,8 @@ func newEntity(id eid) Entity {
 }
 
 // NewEntityGen creates a new Entity with a given generation.
-func NewEntityGen(id eid, gen uint32) Entity {
-	return Entity{id, gen}
+func NewEntityGen(id uint32, gen uint32) Entity {
+	return Entity{eid(id), gen}
 }
 
 // IsZero returns whether this entity is the reserved zero entity.
